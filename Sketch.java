@@ -13,9 +13,9 @@ public class Sketch extends PApplet {
 	
   // random starting points and set speed for the circle
   float fltCircleX = random(50, 950);
-	float fltCircleY = random(50, 950);
-	float fltCircleXSpeed = 10;
-	float fltCircleYSpeed = 6;
+  float fltCircleY = random(50, 950);
+  float fltCircleXSpeed = 10;
+  float fltCircleYSpeed = 6;
 
   // starting points and x speed of the bouncy ball
   float fltBallX = 0;
@@ -28,7 +28,7 @@ public class Sketch extends PApplet {
 
   public void setup() {
     // loading and resizing background and bouncy ball images
-		imgBackground = loadImage("gymnasium.jpg");
+    imgBackground = loadImage("gymnasium.jpg");
     imgBackground.resize(width, height);
 
     imgBouncyBall = loadImage("bouncyball.png");
@@ -62,11 +62,11 @@ public class Sketch extends PApplet {
 
     // setting orange colour and drawing the circle
     fill(255,170,0);
-	  ellipse(fltCircleX, fltCircleY, 100, 100);
+    ellipse(fltCircleX, fltCircleY, 100, 100);
 
     // animating the circle to follow a linear path
-		fltCircleX += fltCircleXSpeed;
-		fltCircleY += fltCircleYSpeed;
+    fltCircleX += fltCircleXSpeed;
+    fltCircleY += fltCircleYSpeed;
 
     // if the circle touches the right or left side, the x speed is reversed
     if(fltCircleX < 50 || fltCircleX > width - 50){
