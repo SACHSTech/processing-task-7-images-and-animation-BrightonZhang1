@@ -76,6 +76,6 @@ public class Sketch extends PApplet {
     // if the circle touches the top or bottom, the x speed is reversed
     if(fltCircleY < 50 || fltCircleY > height - 50){
       fltCircleYSpeed = -fltCircleYSpeed;
-    }
+    } 
   }
 }
